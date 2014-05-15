@@ -4,12 +4,12 @@ _includes/css/grunt.css
 _includes/scripts/grunt.js
 _site
 _drafts
-_mode_modules
+node_modules
 _cache
 _gist_cache
 _site/
 _drafts/
-_node_modules/
+node_modules/
 _cache/
 _gist_cache/
 
