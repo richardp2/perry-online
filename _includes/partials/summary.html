@@ -6,6 +6,11 @@
               <h2 itemprop='headline'><a href='{{ post.url }}' itemprop='url'><i class='fa fa-picture-o'></i> {{ post.title }}</a></h2>
               {% include partials/meta.html %}
             </header>
+    {% when 'album' %} 
+            <header>             
+              <h2 itemprop='headline'><a href='{{ post.url }}' itemprop='url'><i class='fa fa-picture-o'></i> {{ post.title }}</a></h2>
+              {% include partials/meta.html %}
+            </header>
     {% when 'image' %}
             <header>
               {% if post.image %}<img src='{{ post.image }}' title='{{ post.title }}' alt='{{ post.title }}' class='aligncentre' />{% endif %}
@@ -31,6 +36,15 @@
 {% endcase %}
 {% case post.layout %}
     {% when 'gallery' %} 
+            <section class='post-summary' itemProp='articleBody'>
+                {% if post.photoset %}{% flickr_photoset post.photoset "summary" %}
+                This Gallery contains {{ post.images }} photos.{% endif %}
+            </section>
+            
+            <footer>
+              {{ read_more }}
+            </footer>
+    {% when 'album' %} 
             <section class='post-summary' itemProp='articleBody'>
                 {% if post.photoset %}{% flickr_photoset post.photoset "summary" %}
                 This Gallery contains {{ post.images }} photos.{% endif %}

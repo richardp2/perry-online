@@ -11,6 +11,7 @@ richard:
   linkedin: rpperry
   instagram: perryri
   about: "I'm a Quantity Surveyor in South Wales with a passion for photography, technology, science, languages & the outdoors :-)"
+  page: richard-perry/
 rosie:
   name: Rosie Perry
   email: rosie@edismail.me.uk
@@ -18,8 +19,12 @@ rosie:
   flickr: rosie_perry86
   image: rosie.jpg
   about: ""
+  page: rosie-perry/
 rosiejim:
   name: Rosie & Jim
   email: rosiejim@perry-online.me.uk
   web: //www.perry-online.me.uk/
   github: richardp2
+  image: rosiejim.jpg
+  page: rosie-jim/
+  

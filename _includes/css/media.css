@@ -20,6 +20,8 @@
     #main-content hr {margin-right:12.5em;}
      
     #secondary-content {float:right;width:12.5em;}
+  
+    #content section.blog {display:inline-block;vertical-align:top;width:48%;}
 
     #primary-navigation {clear:both;display:block;margin:0.3125em auto;text-align: center;width:100%;}
     #primary-navigation a {display:inline-block;padding:0 0.3125em;width:5.3em;}
