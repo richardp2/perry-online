@@ -192,13 +192,15 @@ td {padding: 10px;background: #ccc;}
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px;
-      background-color:#cddde4;
       display: inline-block;
       font-size:88%;
       font-weight:bold;
       text-align:center;
       width:55px;
     }
+    #archive .blog.photos {background-color:#d1e4cd;}
+    #archive .blog.richard {background-color:#e4cdcd;}
+    #archive .blog.travel {background-color:#cddde4;}
 
 
 
