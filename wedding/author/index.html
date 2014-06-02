@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns:fb='http://ogp.me/ns/fb#' xmlns:og='http://ogp.me/ns#' lang='en-GB'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <title>Authors | Rosie & Jim</title>
+    <meta name='description' content="{% for a in site.authors %}{% assign author = site.data.authors[a] %}
+{% capture image %}{% if author.gravatar %}https://secure.gravatar.com/avatar/{{author.gravatar}}?s=150 %}{% else %}/assets/images/{{author.image}}{% endif %}{% endcapture %}
+&lt;div class='author'&gt;
+{{author.name}}
+
+  {{author.about}}
+&lt;/div&gt;{% endfor %}
+">
+    <meta name='author' content="">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600'>
+    <link rel='stylesheet' href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+    <link rel='stylesheet' href='/assets/css/main.min.css'>
+    <link rel='alternate' href='/feed.xml' type='application/rss+xml' title='Rosie & Jim'>
+    <link rel='author' href="https://plus.google.com/">
+    <link rel='canonical' href="http://www.perry-online.me.uk/author/">
+    
+    <script src='/assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js'></script>
+        
+    <meta property='og:type' content='article'>
+    <meta property='og:title' content="Authors | Rosie & Jim">
+    <meta property='og:description' content="{% for a in site.authors %}{% assign author = site.data.authors[a] %}
+{% capture image %}{% if author.gravatar %}https://secure.gravatar.com/avatar/{{author.gravatar}}?s=150 %}{% else %}/assets/images/{{author.image}}{% endif %}{% endcapture %}
+&lt;div class='author'&gt;
+{{author.name}}
+
+  {{author.about}}
+&lt;/div&gt;{% endfor %}
+">
+    <meta property='og:url' content="http://www.perry-online.me.uk/author/">
+    <meta property='og:site_name' content="Rosie & Jim">
+    
+    <meta name='twitter:title' content="Authors | Rosie & Jim">
+    <meta name='twitter:description' content="{% for a in site.authors %}{% assign author = site.data.authors[a] %}
+{% capture image %}{% if author.gravatar %}https://secure.gravatar.com/avatar/{{author.gravatar}}?s=150 %}{% else %}/assets/images/{{author.image}}{% endif %}{% endcapture %}
+&lt;div class='author'&gt;
+{{author.name}}
+
+  {{author.about}}
+&lt;/div&gt;{% endfor %}
+">
+    <meta name='twitter:url' content="http://www.perry-online.me.uk/author/">
+    <meta name='twitter:creator' content="">
+  </head>
+
+  <body>
+    <div id='container'>
+      <header id='page-header' role='banner' itemscope itemtype='http://schema.org/WPHeader'>
+        <hgroup>
+          <h1 class='site-title' itemProp="headline">Rosie & Jim</h1>
+          <h2 class='site-description' itemProp="description">Our Digital Home</h2>
+        </hgroup>
+                <nav id="primary-navigation" role="navigation">
+          <ul class="main-menu" >
+            <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+              <a href="http://www.perry-online.me.uk/" title="Home"  itemProp="url">Home</a>
+              <ul>
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://www.perry-online.me.uk/about/" title="About Us"  itemProp="url">About Us</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://www.perry-online.me.uk/author/richard-perry/" title="Richard Perry"  itemProp="url">Richard Perry</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://www.perry-online.me.uk/author/rosie-perry/" title="Rosie Perry"  itemProp="url">Rosie Perry</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://www.perry-online.me.uk/author/rosie-jim/" title="Rosie & Jim"  itemProp="url">Rosie & Jim</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://www.perry-online.me.uk/archives/" title="Global Archives"  itemProp="url">Global Archives</a></li>
+              </ul>
+            </li>
+          
+            <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+              <a href="http://travel.perry-online.me.uk/" title="Travel"  itemProp="url">Travel</a>
+              <ul>
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://travel.perry-online.me.uk/cornwall-2012/" title="Cornwall 2012"  itemProp="url">Cornwall 2012</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://travel.perry-online.me.uk/vietnam-2011/" title="Vietnam 2011"  itemProp="url">Vietnam 2011</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://travel.perry-online.me.uk/new-year-2010-11/" title="New Year 2010-11"  itemProp="url">New Year 2010-11</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://travel.perry-online.me.uk/honeymoon-2010/" title="Honeymoon 2010"  itemProp="url">Honeymoon 2010</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://travel.perry-online.me.uk/china-2009/" title="China 2009"  itemProp="url">China 2009</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://travel.perry-online.me.uk/china-2009/three-nations/" title="Three Nations 2009"  itemProp="url">Three Nations 2009</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://travel.perry-online.me.uk/archives/" title="Travel Archives"  itemProp="url">Travel Archives</a></li>
+              </ul>
+            </li>
+          
+            <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+              <a href="http://richard.perry-online.me.uk/" title="Richard"  itemProp="url">Richard</a>
+              <ul>
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://richard.perry-online.me.uk/about/" title="About Me"  itemProp="url">About Me</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://richard.perry-online.me.uk/general/" title="General"  itemProp="url">General</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://richard.perry-online.me.uk/george/" title="George"  itemProp="url">George</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://richard.perry-online.me.uk/languages/" title="Languages"  itemProp="url">Languages</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://richard.perry-online.me.uk/outdoors/" title="Active/Outdoors"  itemProp="url">Active/Outdoors</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://richard.perry-online.me.uk/photography/" title="Photography"  itemProp="url">Photography</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://richard.perry-online.me.uk/reviews/" title="Reviews"  itemProp="url">Reviews</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://richard.perry-online.me.uk/technology/" title="Technology"  itemProp="url">Technology</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://richard.perry-online.me.uk/series/" title="Post Series"  itemProp="url">Post Series</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://richard.perry-online.me.uk/archives/" title="Blog Archives"  itemProp="url">Blog Archives</a></li>
+              </ul>
+            </li>
+          
+            <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+              <a href="http://photos.perry-online.me.uk/" title="Photos"  itemProp="url">Photos</a>
+              <ul>
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://photos.perry-online.me.uk/george/" title="George"  itemProp="url">George</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://photos.perry-online.me.uk/events/" title="Events"  itemProp="url">Events</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://photos.perry-online.me.uk/travel/" title="Travel"  itemProp="url">Travel</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://photos.perry-online.me.uk/other/" title="Other"  itemProp="url">Other</a>
+                  <ul>
+                    <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                      <a href="http://photos.perry-online.me.uk/other/days-out/" title="Days Out"  itemProp="url">Days Out</a>
+                    </li>
+                  </ul>
+                </li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://photos.perry-online.me.uk/wedding/" title="Our Wedding"  itemProp="url">Our Wedding</a></li>
+              
+                <li itemscope itemtype='http://schema.org/SiteNavigationElement'>
+                  <a href="http://photos.perry-online.me.uk/archives/" title="Photo Archives"  itemProp="url">Photo Archives</a></li>
+              </ul>
+            </li>
+          </ul>
+          <hr />
+        </nav><!-- #primary-navigation -->
+      </header><!-- #page-header -->
+      
+      <div id='content'>
+        
+        <section id='wide-content' role='main' itemscope itemtype='http://schema.org/Blog'>
+                
+            
+          <article itemscope itemtype="http://schema.org/Article" class="page">
+            <header>
+              <h2 itemProp="headline">Authors</h2>
+            </header>
+            
+            <section class="post-content" itemProp="articleBody">
+              
+
+<div class='author'>
+  <h3><a href='/author/richard-perry/' title='Richard Perry'>Richard Perry</a></h3>
+  <img src="https://secure.gravatar.com/avatar/de76254e22ce8ef47fd59a5fcc6e5ef6?s=150 %}" title="Richard Perry" alt="Richard Perry" />
+  I'm a Quantity Surveyor in South Wales with a passion for photography, technology, science, languages & the outdoors :-)
+</div>
+
+<div class='author'>
+  <h3><a href='/author/rosie-perry/' title='Rosie Perry'>Rosie Perry</a></h3>
+  <img src="/assets/images/rosie.jpg" title="Rosie Perry" alt="Rosie Perry" />
+  
+</div>
+
+<div class='author'>
+  <h3><a href='/author/rosie-jim/' title='Rosie & Jim'>Rosie & Jim</a></h3>
+  <img src="/assets/images/rosiejim.jpg" title="Rosie & Jim" alt="Rosie & Jim" />
+  
+</div>
+            </section><!-- .post-content -->
+            
+            <footer>              
+              
+            </footer>
+          </article><!-- .page -->
+        
+
+        </section><!-- #wide-content -->
+      </div><!-- #content -->
+            
+      <footer id="page-footer" itemscope itemtype="http://schema.org/WPFooter">
+        <hr />
+        
+        <div class='social'>
+          
+          
+          <span class="fa-stack fa-2x">
+            <a href='//github.com/richardp2' title='GitHub'>
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+            </a>
+          </span>
+          <span class="fa-stack fa-2x">
+            <a href='mai&#108;to&#58;rosiejim@perry-online.me.uk' title='Email'>
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </a>
+          </span>
+          <span class="fa-stack fa-2x">
+            <a href='/feed.xml' title='RSS Feed'>
+              <i class="fa fa-circle fa-stack-2x feed"></i>
+              <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+            </a>
+          </span>
+        </div>
+        <small class='copyright'>Copyright &copy; <span itemprop="copyrightYear">2009 - 2014</span> <span itemprop="copyrightHolder">Rosie & Jim</span></small> &nbsp; &nbsp; | &nbsp; &nbsp; 
+        <small class='site-meta'>Powered by <a href='//jekyllrb.com/' title='Jekyll &bull; Simple, blog-aware, static sites'>Jekyll</a> &amp; Hosted at <a href='//github.com' title='GitHub'>GitHub</a></small>
+      </footer><!-- #page-footer -->
+    </div><!-- #container -->
+        
+            
+    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/assets/scripts/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="/assets/scripts/main.min.js"></script>
+  </body>
+</html>
