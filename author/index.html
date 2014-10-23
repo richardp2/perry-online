@@ -37,6 +37,7 @@
     <meta property='og:url' content="http://www.perry-online.me.uk/author/">
     <meta property='og:site_name' content="Rosie & Jim">
     
+    <meta name='twitter:card' content="summary_large_image">
     <meta name='twitter:title' content="Authors | Rosie & Jim">
     <meta name='twitter:description' content="{% for a in site.authors %}{% assign author = site.data.authors[a] %}
 {% capture image %}{% if author.gravatar %}https://secure.gravatar.com/avatar/{{author.gravatar}}?s=150 %}{% else %}/assets/images/{{author.image}}{% endif %}{% endcapture %}
@@ -47,8 +48,8 @@
 &lt;/div&gt;{% endfor %}
 ">
     <meta name='twitter:url' content="http://www.perry-online.me.uk/author/">
-    <meta name='twitter:creator' content="">
-    <meta name='twitter:site:id' content="">
+    <meta name='twitter:creator' content="@">
+    <meta name='twitter:site:id' content="@">
   </head>
 
   <body>
