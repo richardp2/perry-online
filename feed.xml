@@ -7,10 +7,21 @@
     <link>http://www.perry-online.me.uk</link>
     <atom:link href="http://www.perry-online.me.uk/feed.xml" rel="self" type="application/rss+xml" />
     <description>Our Digital Home</description>
-    <copyright>Copyright (c) 2009-2014 Rosie &amp; Jim</copyright>
+    <copyright>Copyright (c) 2009-2015 Rosie &amp; Jim</copyright>
     <language>en-gb</language>
-    <pubDate>Fri, 31 Oct 2014 22:09:27 +0000</pubDate>
-    <lastBuildDate>Fri, 31 Oct 2014 22:09:27 +0000</lastBuildDate>
+    <pubDate>Mon, 12 Jan 2015 18:30:42 +0000</pubDate>
+    <lastBuildDate>Mon, 12 Jan 2015 18:30:42 +0000</lastBuildDate>
+        <item>
+          <title>New Challenges</title>
+          <link>http://richard.perry-online.me.uk/general/challenges/new-challenges/</link>
+          <pubDate>Mon, 12 Jan 2015 16:23:35 +0000</pubDate>
+          <author>Richard Perry (richard@perrymail.me.uk)</author>
+          <guid>http://richard.perry-online.me.uk/general/challenges/new-challenges/</guid>
+          <description><![CDATA[
+    
+
+]]></description>
+        </item>
         <item>
           <title>30 Day Paleo Challenge</title>
           <link>http://richard.perry-online.me.uk/general/challenges/paleo/</link>
