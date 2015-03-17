@@ -1,21 +1,7 @@
-{% include head.html %}
-            
-          <article itemscope itemtype="http://schema.org/BlogPosting" class="post single">
-            <header>
-              <h2 itemProp="headline">{{ page.title }}</h2>
-              {% assign post = page %}
-              {% include partials/meta.html %}
-            </header>
-            
-            <section class="post-content" itemProp="articleBody">
-              {% if page.series %}{% series_list %}{% endif %}{{ content }}
-            </section><!-- .post-content -->
-            
-            <footer>              
-              {% if page.comments %}
-              <div id="disqus_thread"></div> 
-              {% endif %}
-            </footer>
-          </article><!-- .post.single -->
-        
-{% include foot.html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="refresh" content="0;url=//{{ page.blog }}.perry-online.me.uk{{ page.url }}" />
+  </head>
+</html>

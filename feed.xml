@@ -1,5 +1,4 @@
 ---
-layout: none
 ---
 <?xml version="1.0" encoding="utf-8"?>{% assign author = site.data.authors[site.owner] %}
 <?xml-stylesheet type="text/xsl" href="/assets/xsl/feed.xsl" media="screen"?>
@@ -15,12 +14,11 @@ layout: none
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>{% for post in site.posts %}{% if post.author %}{% assign author = site.data.authors[post.author] %}{% else %}{% assign author = site.data.authors[site.owner] %}{% endif %}
         <item>
-          <title>{{ post.title | xml_escape }}</title>
+          <title>{{ post.blog }} - {{ post.title | xml_escape }}</title>
           <link>http://{{ post.blog }}.perry-online.me.uk{{ post.url | xml_escape }}</link>
           <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
           <author>{{ author.name | xml_escape }} ({{author.email}})</author>
           <guid>http://{{ post.blog }}.perry-online.me.uk{{ post.url | xml_escape }}</guid>
-          <description><![CDATA[{% include partials/feed_content.html %}]]></description>
         </item>{% endfor %}
   </channel>
 </rss>

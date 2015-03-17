@@ -1,35 +1,56 @@
-name: Rosie & Jim
+# Site details
+name:        Rosie & Jim
 description: Our Digital Home
-owner: rosiejim
+owner:       rosiejim
 authors:
-- richard
-- rosie
-- rosiejim
-url: http://www.perry-online.me.uk
-email: richard@perry-online.me.uk
+  - richard
+  - rosie
+  - rosiejim
+url:         http://www.perry-online.me.uk
+email:       richard@perry-online.me.uk
 
-markdown: kramdown
-kramdown:
-  use_coderay: true
-pygments: true
+# Handling Reading
 exclude: 
-- 'changes'
-- 'Gemfile'
-- 'Gemfile.lock'
-- 'Gruntfile.js'
-- 'node_modules'
-- 'package.json'
-- 'Rakefile'
-- 'README.md'
-gems: ["emoji_for_jekyll"]
+  - 'changes'
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'Gruntfile.js'
+  - 'node_modules'
+  - 'package.json'
+  - 'Rakefile'
+  - 'README.md'
 
-encoding: utf-8
+# Plugins
+gems:
+  - jekyll-mentions
+  - jemoji
 
-permalink: /:categories/:title/
-relative_permalinks: false
+# Outputting
+permalink:           /:categories/:title/
+paginate:            10
+paginate_path:       "page/:num"
+timezone:            Europe/London
+defaults:
+  -
+    scope:
+      path:          ""
+      type:          "posts"
+    values:
+      layout:        "post"
+      comments:      true
+  -
+    scope:
+      path:          "pages"
+    values:
+      layout:        "page"
+      comments:      false
 
-paginate: 10
-paginate_path: "page/:num"
+# Markdown Processors
+kramdown:
+  use_coderay:       true
+
+sass:
+  style:             compressed
 
 
 category_dir: /
