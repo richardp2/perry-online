@@ -7,8 +7,8 @@ permalink: /author/
 
 {% for a in site.authors %}{% assign author = site.data.authors[a] %}
 {% capture image %}{% if author.gravatar %}https://secure.gravatar.com/avatar/{{author.gravatar}}?s=150 %}{% else %}/assets/images/{{author.image}}{% endif %}{% endcapture %}
-<div class='author'>
+<div class='author clearfix'>
   <h3><a href='/author/{{author.page}}' title='{{author.name}}'>{{author.name}}</a></h3>
-  <img src="{{image}}" title="{{author.name}}" alt="{{author.name}}" />
+  <img src="{{image}}" title="{{author.name}}" alt="{{author.name}}" class='alignleft'/>
   {{author.about}}
 </div>{% endfor %}

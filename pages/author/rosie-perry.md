@@ -1,8 +1,7 @@
 ---
-author: rosie
-comments: false
-layout: page
 title: "Author: Rosie Perry"
+layout: author
+author: rosie
 permalink: /author/rosie-perry/
 ---
 
@@ -10,8 +9,6 @@ permalink: /author/rosie-perry/
 
 My name is Rosie Perry. You can find more about me via these links:
 
-{% include partials/full-social.html %}
+{% include full-social.html %}
 
 And here is a list of all my posts:
-
-{% include partials/author.html %}

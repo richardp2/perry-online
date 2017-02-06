@@ -1,32 +1,28 @@
 ---
-layout: default
+layout: page
 title: Home
 comments: false
 ---
 
-        <p>
-          Welcome to our newly updated home page. This site started out in 2009 as a way to
-          keep people up to date with what we were doing in China for 8½ weeks and was then
-          used to keep a kind of diary of our travelling ever since. However, it has now
-          become something more. The geeky side of me took over and decided that we should
-          put together a blog network and write not just about our travelling exploits, but
-          about anything and everything else as well. So I dug into the guts of WordPress,
-          learnt how to do this, built a new unified theme for the network and here we are.
-        </p>
+            <p>Welcome to our newly updated home page. This site started out in 2009 as a way to
+            keep people up to date with what we were doing in China for 8½ weeks and was then
+            used to keep a kind of diary of our travelling ever since. However, it has now
+            become something more. The geeky side of me took over and decided that we should put
+            together a blog network and write not just about our travelling exploits, but about
+            anything and everything else as well. So I dug into the guts of WordPress, learnt
+            how to do this, built a new unified theme for the network, switched over the Jekyll,
+            rebuilt the theme, twice and here we are.</p>
 
-        <p>The latest posts for each blog are listed below.</p>
-        {% for blog in site.data.blogs %}
-          <section itemscope itemtype='http://schema.org/Blog' class='blog'>
-            <h3 itemprop='name'>{{blog.title}}</h3>{% assign count = 0 %}
-            <ul>{% for post in site.posts %}{% if post.blog contains blog.name %}{% assign count = count | plus: 1 %}{% endif %}{% if count > 0 and count <= 10 and post.blog == blog.name%}
-              <li itemscope itemtype='http://schema.org/BlogPost'>
-                <a href='{{blog.url}}{{post.url}}' title='{{post.title}}' itemprop='url'>
-                  <span itemprop='headline'>{{post.title}}</span>
-                </a>
-              </li>{% endif %}{% endfor %}
-            </ul>
-            <hr />
-          </section>
-
-
-        {% endfor %}
+            <p>The latest posts for each blog are listed below.</p>
+            {% for blog in site.data.blogs %}
+                <section itemscope itemtype='//schema.org/Blog' class='blog'>
+                    <h3 itemprop='name'>{{blog.title}}</h3>{% assign sorted_posts = (site.data.posts | sort: 'date' | reverse | where: "blog" , blog.name) %}
+                    <ul>{% for post in sorted_posts limit:10 %}
+                        <li itemscope itemtype='//schema.org/BlogPost'>
+                            <a href='{{blog.url}}{{post.url}}' title='{{post.title}}' itemprop='url'>
+                                <span itemprop='headline'>{{post.title}}</span>
+                            </a>
+                        </li>{% endfor %}
+                    </ul>
+                </section>
+            {% endfor %}

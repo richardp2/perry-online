@@ -1,0 +1,26 @@
+---
+layout: default
+---
+        {% assign author = site.data.authors[page.author] %}
+        <article itemscope itemtype="//schema.org/Article" class="page">
+            <header>
+                <h1 itemProp="headline">{{ page.title }}</h1>
+            </header>
+            
+            <section class="post-content" itemProp="articleBody">
+                {% capture image %}{% if author.gravatar %}https://secure.gravatar.com/avatar/{{author.gravatar}}?s=225{% else %}/assets/images/{{author.image}}{% endif %}{% endcapture %}<img src="{{image}}" title="{{author.name}}" alt="{{author.name}}" class="alignright"/>
+                
+                {{ content }}
+
+                <ul id='archive'>
+                {% assign sorted_posts = (site.data.posts | sort: 'date' | reverse | where: "author" , page.author) %}
+                {% for post in sorted_posts %}
+                    {% include archives.html %}
+                {% endfor %}
+                </ul>
+            </section><!-- .post-content -->
+            
+            <footer>              
+                {% if page.comments %}<div id="disqus_thread"></div>{% endif %}
+            </footer>
+        </article><!-- .page -->

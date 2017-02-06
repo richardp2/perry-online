@@ -1,35 +1,58 @@
+######################################
+#                                    #
+#         Site Configuration         #
+#                                    #
+######################################
+
 # Site details
-name:        Rosie & Jim
+title: Rosie & Jim
 description: Our Digital Home
-owner:       rosiejim
+author: rosiejim
 authors:
   - richard
   - rosie
   - rosiejim
-url:         http://www.perry-online.me.uk
-email:       richard@perry-online.me.uk
+url: https://www.perry-online.me.uk
+email: richard@perry-online.me.uk
 
 # Handling Reading
 exclude: 
   - 'changes'
   - 'Gemfile'
   - 'Gemfile.lock'
-  - 'Gruntfile.js'
-  - 'node_modules'
-  - 'package.json'
-  - 'Rakefile'
+  - 'LICENSE.md'
   - 'README.md'
 
-# Plugins
 gems:
-  - jekyll-mentions
+  - jekyll-seo-tag
   - jemoji
 
+
+######################################
+#                                    #
+#        Theme Configuration         #
+#                                    #
+######################################
+
+# General Configuration
+theme: jekyll-theme-perry
+logo: /assets/images/logo.svg
+meta:             
+  copyright:
+    year: '2009'
+  powered-by: true
+  hosting:          
+    name: GitLab Pages
+    link: //pages.gitlab.io
+
+# Markdown Processors
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Outputting
-permalink:           /:categories/:title/
-paginate:            10
-paginate_path:       "page/:num"
-timezone:            Europe/London
+permalink: /:categories/:title/
+timezone: Europe/London
 defaults:
   -
     scope:
@@ -45,20 +68,31 @@ defaults:
       layout:        "page"
       comments:      false
 
-# Markdown Processors
-kramdown:
-  use_coderay:       true
 
-sass:
-  style:             compressed
+######################################
+#                                    #
+#        Plugin Configuration        #
+#                                    #
+######################################
 
+# Jekyll SEO Tag Gem
+facebook:
+  app_id: 181763705182339
+  admins: 286603693
 
-category_dir: /
+twitter:
+  username: richard_p2
 
-flickr:
-  enabled:         yes
-  cache_dir:       ./_cache/flickr
-  api_key:         4389a0eb79c41ca17e149830c22fc7c2
-  shared_secret:   ef41108edae962b0
-  access_token:    72157641557984045-92a5dbebf3e01418
-  access_secret:   1625dbdd3cf26db6
+social:
+  links:
+    - https://twitter.com/richard_p2
+    - https://www.facebook.com/richardpperry
+    - https://www.linkedin.com/in/rpperry
+    - https://plus.google.com/+RichardPerry1
+    - https://github.com/richardp2
+
+google:
+  analytics: UA-26085183-1
+
+webmaster_verifications:
+  google: kShm7KvCbKtxnGKHhDpje_9bPdemRwk2OLXtfjEBWEQ
