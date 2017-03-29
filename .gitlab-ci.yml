@@ -1,10 +1,23 @@
 image: ruby:2.3
 
+# define the environment variables
+variables:
+  JEKYLL_ENV: production
+
+# add bundle cache to 'vendor' for speeding up builds
+cache:
+  paths: 
+    - vendor/
+
+# 'bundle' all the required gems for the project
+before_script:
+  - bundle install --path vendor
+
+# build and deploy the site
 pages:
   stage: deploy
   script:
-  - bundle install
-  - JEKYLL_ENV=production bundle exec jekyll build -d public
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
     - public
