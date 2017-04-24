@@ -1,5 +1,17 @@
 -
   blog: travel
+  date: 2017-04-13 22:12:00 -0500
+  title: "Canada's Capital"
+  author: richard
+  url: /canada-2017/ottawa/
+-
+  blog: travel
+  date: 2017-04-12 21:30:00 -0500
+  title: "Lazing Around"
+  author: richard
+  url: /canada-2017/lazy/
+-
+  blog: travel
   date: 2017-04-10 21:49:00 -0500
   title: "Defending the kingdom"
   author: richard
