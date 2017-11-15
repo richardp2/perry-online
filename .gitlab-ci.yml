@@ -4,11 +4,16 @@ image: ruby:2.3
 variables:
   JEKYLL_ENV: production
 
-# add bundle cache to 'vendor' for speeding up builds
+# add bundle cache to 'vendor' & untracked files for speeding up builds
 cache:
   untracked: true
   paths: 
     - vendor/
+
+# add artifacts for the builds
+artifacts:
+  paths:
+  - public/
 
 # 'bundle' all the required gems for the project
 before_script:
