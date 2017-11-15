@@ -10,11 +10,6 @@ cache:
   paths: 
     - vendor/
 
-# add artifacts for the builds
-artifacts:
-  paths:
-  - public/
-
 # 'bundle' all the required gems for the project
 before_script:
   - bundle install --path vendor
@@ -26,6 +21,7 @@ pages:
   - bundle exec jekyll build -d public
   artifacts:
     paths:
-    - public
+    - public/
+    when: always
   only:
   - pages
