@@ -24,7 +24,7 @@ exclude:
   - 'README.md'
   - 'vendor'
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jemoji
 
