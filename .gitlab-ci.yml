@@ -6,6 +6,7 @@ variables:
 
 # add bundle cache to 'vendor' for speeding up builds
 cache:
+  untracked: true
   paths: 
     - vendor/
 
