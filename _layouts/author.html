@@ -13,7 +13,7 @@ layout: default
                 {{ content }}
 
                 <ul id='archive'>
-                {% assign sorted_posts = (site.data.posts | sort: 'date' | reverse | where: "author" , page.author) %}
+                {% assign sorted_posts = site.data.posts | sort: 'date' | reverse | where: "author" , page.author %}
                 {% for post in sorted_posts %}
                     {% include archives.html %}
                 {% endfor %}

@@ -16,7 +16,7 @@ comments: false
             <p>The latest posts for each blog are listed below.</p>
             {% for blog in site.data.blogs %}
                 <section itemscope itemtype='//schema.org/Blog' class='blog'>
-                    <h3 itemprop='name'>{{blog.title}}</h3>{% assign sorted_posts = (site.data.posts | sort: 'date' | reverse | where: "blog" , blog.name) %}
+                    <h3 itemprop='name'>{{blog.title}}</h3>{% assign sorted_posts = site.data.posts | sort: 'date' | reverse | where: "blog" , blog.name %}
                     <ul>{% for post in sorted_posts limit:10 %}
                         <li itemscope itemtype='//schema.org/BlogPost'>
                             <a href='{{blog.url}}{{post.url}}' title='{{post.title}}' itemprop='url'>

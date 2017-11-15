@@ -5,7 +5,7 @@ title: Archives
 permalink: /archives/
 ---
 
-        <ul id='archive'>{% assign sorted_posts = (site.data.posts | sort: 'date' | reverse ) %}
+        <ul id='archive'>{% assign sorted_posts = site.data.posts | sort: 'date' | reverse  %}
         {% for post in sorted_posts %}
             {% include archives.html %}
         {% endfor %}
